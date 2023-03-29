@@ -1,5 +1,4 @@
 name: Branch CI
-
 on:
   pull_request:
     types:
@@ -7,14 +6,13 @@ on:
       - synchronize
     branches:
       - main
-
 jobs:
   Branch-CI:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
-
+        
       - name: Setup node
         uses: actions/setup-node@v3
         with:
