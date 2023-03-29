@@ -1,11 +1,11 @@
 name: Branch CI
+
 on:
   pull_request:
     types:
       - opened
       - synchronize
-    branches:
-      - main
+
 jobs:
   Branch-CI:
     runs-on: ubuntu-latest
